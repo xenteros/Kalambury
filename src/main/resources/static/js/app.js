@@ -7,11 +7,6 @@ app.config(function ($routeProvider) {
                     controller: 'HomeController',
                     templateUrl: 'results/main.html'
                 })
-            .when('/name',
-                {
-                    controller: 'NameController',
-                    templateUrl: 'partials/name.html'
-                })
             .when('/game',
                 {
                     controller: 'GameController',
@@ -31,10 +26,6 @@ app.controller('HomeController', function($scope, $http, $rootScope, $location) 
         $scope.start = function() {
             $location.path("/game");
         }
-});
-
-app.controller('NameController', function($scope, $http, $rootScope, $location) {
-
 });
 
 app.controller('GameController', function($scope, $http, $rootScope, $location, $timeout) {
@@ -86,13 +77,9 @@ app.controller('GameController', function($scope, $http, $rootScope, $location, 
 });
 
 app.controller('ResultsController', function($scope, $http, $rootScope, $location) {
-    $scope.score = {};
-    $scope.score.user = 4;
-    $scope.score.server = 3;
-    $scope.score.message = "Oh, you won";
 
     $scope.reset = function() {
-        $location.path("/name");
+        $location.path("/game");
     }
 });
 
