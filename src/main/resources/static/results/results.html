@@ -1,0 +1,29 @@
+		<link href="/results/bootstrap.css" rel="stylesheet">
+		<link href="/results/style.css" rel="stylesheet"/>
+
+    <body>
+		<div style="z-index: -1; background-color: #2093ff; position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+			<img src="/results/clouds.png" class="bg">
+			<div class="container-fluid">
+			<div class="row" style="margin-top: 13%;">
+				<div class="col-sm-2 col-sm-offset-3">
+					<img src="/results/user.png" width="100%" height="auto" />
+					<p class="user-name post-content">{{user}}</p>
+				</div>
+				<div class="col-sm-2">
+					<h1 class="wynik">{{score.user}} : {{score.server}}</h1>
+					<h1 class="wynik-info">{{score.message}}</h1>
+				</div>
+				<div class="col-sm-2">
+					<img src="/results/loose.png" width="100%" height="auto" />
+				</div>
+			</div>
+			<div class="row align-center" style="margin-top: 3%;">				
+					<button style="border: 0; background: transparent; cursor: pointer;" ng-click="reset()">
+						<img src="/results/btnPlayAgain.png" width="200px" height="auto" alt="submit" />
+					</button>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

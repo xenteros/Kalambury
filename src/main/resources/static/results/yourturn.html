@@ -1,0 +1,26 @@
+		<link href="/results/style.css" rel="stylesheet"/>
+		<link href="/results/bootstrap.css" rel="stylesheet"/>
+		<div style="z-index: -1; background-color: #ffffff; position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+			<img src="/results/bottom.png" class="bg2">
+			<div class="container-fluid" style="height: 100%;">
+			<div class="row">
+				<div class="col-sm-1 " style="padding-top: 30px;" >
+					<img class="img-responsive" src="/results/goat.png" width="auto" height="130px" />
+				</div>
+				<div class="col-sm-2" style="padding-top: 30px; padding-left: 40px;">
+						<img src="/results/answer.png" width="100%" height="auto" />
+						<p class="goat-answer post-content">{{serverMessage}}</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1" style="padding-top:60px;">
+					<canvas width="560" height="560" id="myCanvas" drawing></canvas>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 text-center" style="background-color: #ffcc00; height: 100vh; padding-top: 30px;">
+					<div >
+					<button ng-click="clear()" style="border: 0; background: transparent; cursor: pointer;">
+						<img src="/results/btnClean.png" width="180px" height="auto" alt="submit" />
+					</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>

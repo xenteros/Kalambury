@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'myFont';
+	src: url('Unibody8.ttf');
+}
+img.bg {
+	min-width: 200px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+img.bg2 {
+	min-width: 200px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+.align-center {
+	margin: 0 auto;
+	overflow: hidden;
+	display: block;
+	clear: both;
+	text-align: center;
+	float: none;
+}
+
+.vertical-center {
+	min-height: 100%;  /* Fallback for vh unit */
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex; 
+
+	-webkit-box-align : center;
+	-webkit-align-items : center;
+	-moz-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+
+	width: 100%;
+
+    -webkit-box-pack : center;
+	-moz-box-pack : center;
+	-ms-flex-pack : center;
+	-webkit-justify-content : center;
+	justify-content : center;
+}
+.hello {
+	color: #6d2191;
+	font-family: 'myFont';
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-top: 200px;
+}
+.rights {
+	position: absolute; 
+	margin-top: 10px; 
+	margin-left: 10px; 
+	color: #dfdfdf; 
+	font-size: 0.9em
+}
+.wynik {
+	color: #ffe400;
+	text-align: center;
+	font-family: 'myFont';
+	font-size: 4em;
+}
+.wynik-info {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'myFont';
+	font-size: 2em;
+	line-height: 1.5em;
+}
+.user-name {
+	color: #6d2191;
+	font-family: 'myFont';
+	font-size: 2em;
+}
+.time-info {
+	color: #6d2191;
+	font-family: 'myFont';
+	font-size: 2em;
+	line-height: 150%;
+	text-align: right;
+}
+.timer {
+	color: #000000;
+	font-family: 'myFont';
+	font-size: 2em;
+	line-height: 150%;
+	text-align: center;
+	background-color: #ffffff;
+}
+.post-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.goat-answer {
+	color: #ffffff;
+	font-family: 'myFont';
+	font-size: 1.1em;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 160px;
+	line-height: 150px;
+}
+.left-side {
+	padding-top: 2%;
+    float: none;
+    display: table-cell;
+}
+.right-side {
+	padding-top: 2%;
+    float: none;
+    display: table-cell;
+}
