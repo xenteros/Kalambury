@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="Controller">
+    <div id="d">
+      <h1>Kalambury {{message}}</h1>
+      <p>Naciśnij i rysuj!</p>
+	  <button ng-click="click()">Click</button>
+      <canvas width="560" height="560" id="myCanvas" drawing></canvas>
+    
+      <p style="color:#9ac">by Ich Troje, Ona Jedna</p>
+
+    </div>
+  </body>
+
+</html>
